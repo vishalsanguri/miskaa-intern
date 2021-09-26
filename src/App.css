@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+.data-container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: space-around;
+    margin-top: 50px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item-container{
+    width: 300px;
+    display: flex;
+    row-gap: 10px;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(100, 100, 100);
+    padding: 15px;
+    border-radius: 18px;
+    background: #e0e0e0;
+    box-shadow:  24px 24px 48px #bebebe,
+             -24px -24px 48px #ffffff;
+             background-color: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.name-country{
+    font-size: 19px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.region-sub{
+    display: flex;
+    width: 100%;
+    text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.region{
+    width: 50%;
+    border-right: 1px solid black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subregion{
+width: 50%;
+}
+.refresh-btn{
+    position: absolute;
+    right: 20px;
+    user-select: none;
+    cursor: pointer;
+    background-color: rgb(0, 23, 233);
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: white;
+}
+.item-container1{
+    width: 300px;
+    display: flex;
+    row-gap: 10px;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(100, 100, 100);
+    padding: 15px;
+    border-radius: 18px;
+    animation: animation1 1s linear infinite ;
+    background: #e0e0e0;
+    box-shadow:  24px 24px 48px #bebebe,
+             -24px -24px 48px #ffffff;
+             background-color: white;
+}
+@keyframes animation1 {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
